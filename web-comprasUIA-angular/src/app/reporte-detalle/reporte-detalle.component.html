@@ -1,0 +1,8 @@
+<div *ngIf="reporte">
+  <h2>{{reporte.name | uppercase}} Detalles Items</h2>
+  <div><span>id: </span> {{reporte.id}}</div>
+  <div>
+    <label for="reporte-name">Nombre de Item</label>
+    <input id="reporte-name" [(ngModel)]="reporte.name"/>
+  </div>
+</div>
